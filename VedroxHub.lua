@@ -16,7 +16,7 @@ end
 
 local Library = {}
 
-function Library:Window(gamename, uimaincolor)
+function Library:Window(hubname, gamename, uimaincolor)
 
     local uimaincolor = uimaincolor or Color3.fromRGB(19, 139, 194)
 
@@ -83,7 +83,7 @@ function Library:Window(gamename, uimaincolor)
     HubName.Position = UDim2.new(0.0670370385, 0, 0.0274999999, 0)
     HubName.Size = UDim2.new(0, 128, 0, 38)
     HubName.Font = Enum.Font.GothamBold
-    HubName.Text = "Vedrox Hub"
+    HubName.Text = hubname or "Vedrox Hub"
     HubName.TextColor3 = Color3.fromRGB(255, 255, 255)
     HubName.TextSize = 16.000
     HubName.TextWrapped = true
